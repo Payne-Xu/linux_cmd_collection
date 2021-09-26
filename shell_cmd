@@ -10,3 +10,6 @@ du -h /meda_home/ --max_depth=1 2>/dev/null | sort -n -r
 for var in *.log; do
   mv $var "before_"$var;
 done
+
+4. ps
+ps -fu ai0229 | grep code | awk '{print $2}' | xargs kill -9
