@@ -19,3 +19,4 @@ ${string#substring} : 从变量$string的开头, 删除最短匹配$substring的
 ${string##substring}: 从变量$string的开头, 删除最长匹配$substring的子串
 ${string%substring} : 从变量$string的结尾, 删除最短匹配$substring的子串
 ${string%%substring}: 从变量$string的结尾, 删除最长匹配$substring的子串
+${string'substring'}: 把字符串常量'substring'加到变量string后面
