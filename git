@@ -1,0 +1,2 @@
+1. Tag
+git push origin :refs/tags/tagName  删除远程
