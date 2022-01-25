@@ -1,6 +1,7 @@
 1. find
 find -name "core.[0-9]*"
 find {directory} -type f -size +100000k -exec ls -lh {} \; | awk '{ print $9 ": " $5 }' # list file name : size, which larger than 100M
+find ! -mmin 1 -exec rm -f {} \; # remove files that 1 minite earlier
 
 2. du
 du -h /meda_home/ --max_depth=1 2>/dev/null | sort -n -r
