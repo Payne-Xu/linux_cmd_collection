@@ -31,4 +31,5 @@
   
   3. cmake
   cmake -H. -Bbuild # setHomeDir, set build dir, if not exist, will create
+  cmake --build build # compile
 
