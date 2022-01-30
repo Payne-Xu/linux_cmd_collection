@@ -28,4 +28,7 @@
 
       return sum / n_values;
   }
+  
+  3. cmake
+  cmake -H. -Bbuild # setHomeDir, set build dir, if not exist, will create
 
