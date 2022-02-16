@@ -4,7 +4,7 @@ find {directory} -type f -size +100000k -exec ls -lh {} \; | awk '{ print $9 ": 
 find ! -mmin 1 -exec rm -f {} \; # remove files that 1 minite earlier
 
 2. du
-du -h /meda_home/ --max_depth=1 2>/dev/null | sort -n -r
+du -h /meda_home/ --max-depth=1 2>/dev/null | sort -n -r
   -h: -human, could also be -BG, shown as GB unit
   -r: reverse
  
